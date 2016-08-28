@@ -30,13 +30,13 @@ const Root = () =>
 			</div>
 			<div className="col-md-3 center">
 				<a className="app-name">
-					LuminalBoom <span className="fa fa-rocket"></span>
+					LuminalBoom
 				</a>
 			</div>
 			<div className="col-md-4">
 				<ul className="nav-list float-right">
 					<li>
-						<a href="">Search</a>
+						<a href=""><i className="fa fa-search"></i></a>
 					</li>
 					<li>
 						<a href="">Login</a>

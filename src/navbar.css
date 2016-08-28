@@ -14,14 +14,18 @@
     border-bottom: 1px solid rgba(0,0,0,0.4);
 }
 .nav-list{
-display: inline-flex;
+    display: inline-flex;
 }
-.nav-list li:hover{
-    background-color: rgba(0,0,0,0.1);
+.nav-list li a{
+    transition: all 0.2s linear;
+}
+.nav-list li a:hover{
+    color: rgba(25, 162, 109, 0.78)
 }
 .nav-list li{
     margin-left: 1vw;
     margin-right: 1vw;
+    transition: all 0.5s linear;
 }
 .center{
     text-align: center;
