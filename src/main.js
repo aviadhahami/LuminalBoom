@@ -11,7 +11,7 @@ const rootEl = document.getElementById('root')
 attachFastClick.attach(document.body)
 
 // Expose globally
-window.React = React
+window.React = React;
 
 let render = () => {
   const Root = require('./components/Root').default
@@ -19,7 +19,7 @@ let render = () => {
     <Root />,
     rootEl
   )
-}
+};
 
 if (module.hot) {
   const renderApp = render
