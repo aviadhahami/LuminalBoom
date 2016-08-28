@@ -18,31 +18,31 @@ const Root = () =>
 			<div className="col-md-4">
 				<ul className="nav-list">
 					<li>
-						<a href="">Discover</a>
+						<a href="#" onClick={routeTo.bind({route:'discover'})}>Discover</a>
 					</li>
 					<li>
-						<a href="">Start a challenge</a>
+						<a href="#" onClick={routeTo.bind({route:'start-a-challenge'})}>Start a challenge</a>
 					</li>
 					<li>
-						<a href="">About us</a>
+						<a href="#"  onClick={routeTo.bind({route:'about'})}>About us</a>
 					</li>
 				</ul>
 			</div>
 			<div className="col-md-3 center">
-				<a className="app-name">
+				<a href="#" className="app-name" onClick={routeTo.bind({route:''})}>
 					LuminalBoom
 				</a>
 			</div>
 			<div className="col-md-4">
 				<ul className="nav-list float-right">
 					<li>
-						<a href=""><i className="fa fa-search"></i></a>
+						<a href="#"><i className="fa fa-search"></i></a>
 					</li>
 					<li>
-						<a href="">Login</a>
+						<a href="#">Login</a>
 					</li>
 					<li>
-						<a href="">Sign up</a>
+						<a href="#">Sign up</a>
 					</li>
 				</ul>
 			</div>
