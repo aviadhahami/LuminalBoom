@@ -1,8 +1,9 @@
 import '../globals.css'
+import '../navbar.css'
 import React from 'react'
 import { Router, browserHistory, hashHistory } from 'react-router'
 import routes from '../routes'
-import {Navbar, NavItem, NavDropdown, MenuItem, Nav} from 'react-bootstrap'
+import FontAwesome from 'react-fontawesome'
 
 const history = window.location.hostname === 'vesparny.github.io'
 	? hashHistory // for GitHub pages
@@ -13,24 +14,39 @@ const routeTo = function () {
 };
 const Root = () =>
 	<div>
-		<Navbar>
-			<Nav pullLeft>
-				<NavItem eventKey={1} onClick={routeTo.bind({route:'test'})}>Discover</NavItem>
-				<NavItem eventKey={2} onClick={routeTo.bind({route:'test'})}>Start a challenge</NavItem>
-				<NavItem eventKey={3} onClick={routeTo.bind({route:'test'})}>About us</NavItem>
-			</Nav>
-							
-				<Navbar.Header>
-					<Navbar.Brand>
-						<a onClick={routeTo.bind({route:''})}>Luminal Boom</a>
-					</Navbar.Brand>
-				</Navbar.Header>
-			<Nav pullRight>
-				<NavItem eventKey={4} href="#">Search</NavItem>
-				<NavItem eventKey={5} href="#">Login</NavItem>
-				<NavItem eventKey={6} href="#">Signup</NavItem>
-			</Nav>
-		</Navbar>
+		<div className="navbar customNav flex-row">
+			<div className="col-md-4">
+				<ul className="nav-list">
+					<li>
+						<a href="">Discover</a>
+					</li>
+					<li>
+						Start a challenge
+					</li>
+					<li>
+						About us
+					</li>
+				</ul>
+			</div>
+			<div className="col-md-3 center">
+				<a className="app-name">
+					LuminalBoom
+				</a>
+			</div>
+			<div className="col-md-4">
+				<ul className="nav-list float-right">
+					<li>
+						<a href="">a<FontAwesome name='rocket' />test</a>
+					</li>
+					<li>
+						Start a challenge
+					</li>
+					<li>
+						About us
+					</li>
+				</ul>
+			</div>
+		</div>
 		<Router
 			children={routes}
 			history={history}

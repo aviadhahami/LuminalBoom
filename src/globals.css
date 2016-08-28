@@ -6,9 +6,3 @@ ul {
 #root {
   height: 100%;
 }
-
-/*May cause bugs!*/
-/*.navbar > div, .flex-space{*/
-    /*display: flex!important;*/
-    /*justify-content: space-around!important;*/
-/*}*/
