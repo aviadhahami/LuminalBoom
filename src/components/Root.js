@@ -3,7 +3,7 @@ import '../navbar.css'
 import React from 'react'
 import { Router, browserHistory, hashHistory } from 'react-router'
 import routes from '../routes'
-import FontAwesome from 'react-fontawesome'
+import FontAwesome from 'react-fontawesome';
 
 const history = window.location.hostname === 'vesparny.github.io'
 	? hashHistory // for GitHub pages
@@ -21,28 +21,28 @@ const Root = () =>
 						<a href="">Discover</a>
 					</li>
 					<li>
-						Start a challenge
+						<a href="">Start a challenge</a>
 					</li>
 					<li>
-						About us
+						<a href="">About us</a>
 					</li>
 				</ul>
 			</div>
 			<div className="col-md-3 center">
 				<a className="app-name">
-					LuminalBoom
+					LuminalBoom <span className="fa fa-rocket"></span>
 				</a>
 			</div>
 			<div className="col-md-4">
 				<ul className="nav-list float-right">
 					<li>
-						<a href="">a<FontAwesome name='rocket' />test</a>
+						<a href="">Search</a>
 					</li>
 					<li>
-						Start a challenge
+						<a href="">Login</a>
 					</li>
 					<li>
-						About us
+						<a href="">Sign up</a>
 					</li>
 				</ul>
 			</div>
