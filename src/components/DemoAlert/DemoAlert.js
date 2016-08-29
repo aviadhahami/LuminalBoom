@@ -4,6 +4,7 @@
 import './DemoAlert.css'
 import './../Home.css'
 import React,{Component} from 'react'
+import {browserHistory} from 'react-router'
 import {Grid, Row, Col, FormControl, Button} from 'react-bootstrap'
 
 class DemoAlert extends Component{
@@ -35,7 +36,7 @@ class DemoAlert extends Component{
 							</div>
 							<div className="input-field">
 								<input className='input' type="text" placeholder="Enter your email address"/>
-								<a href="#" className="send-button">Send</a>
+								<a href="#" className="send-button" onClick={()=>{history.push('/home')}}>Send</a>
 							</div>
 						</Col>
 					</Row>
