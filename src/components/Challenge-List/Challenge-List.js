@@ -17,9 +17,10 @@ class ChallangeList extends  Component{
 		this.state={
 			cards : {
 				card_1:{
-					name:'MendalimosBar',
+					name:'Mendalimos Family',
 					picture:'assets/pictures/MendalimosBarPhoto.png',
 					active:true,
+					by:'Mendalimos',
 					location:'TLV, IL',
 					participants:25,
 					daysToGo:12,
@@ -28,25 +29,26 @@ class ChallangeList extends  Component{
 					description:'Upload a photo / video in the concept of “familiness” - anything goes! The most creative photo will win 200 ILS.'
 				},
 				card_2:{
-					name:'Challenge A',
-					picture:'https://lh4.googleusercontent.com/-blXNrBLIAYs/AAAAAAAAAAI/AAAAAAAAACk/_blBP6GDiok/s0-c-k-no-ns/photo.jpg',
+					name:'Bizzy Dizzy!',
+					picture:'http://goo.gl/qrcqEt',
 					active:false,
 					location:'TLV, IL',
 					participants:12245,
 					daysToGo:12,
 					percentage:20,
-					description:'This event is not active at the moment'
-									
+					description:'Details will be available soon....',
+					by:'Dizzy Frishdon',
 				},
 				card_3:{
-					name:'Challenge A',
-					picture:'https://lh4.googleusercontent.com/-blXNrBLIAYs/AAAAAAAAAAI/AAAAAAAAACk/_blBP6GDiok/s0-c-k-no-ns/photo.jpg',
+					name:'Balloony Alma',
+					by:'Kuli Alma',
+					picture:'http://goo.gl/jjJOC6',
 					active:false,
-					location:'TLV, IL',
+					location:'Sderot, IL',
 					participants:12245,
 					daysToGo:12,
 					percentage:56,
-					description:'This event is not active at the moment. Check again soon!'
+					description:'Details will be available soon....'
 				},
 			}
 		}

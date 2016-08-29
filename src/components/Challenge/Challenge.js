@@ -20,7 +20,7 @@ class Challenge extends  Component{
 	render(){
 		return(
 			<Grid>
-				<div className="challenge-container" onClick={()=>{window.open('https://www.instagram.com/explore/tags/LominalBoom')}}>
+				<div className="challenge-container" onClick={()=>{window.open('https://www.instagram.com/explore/tags/LuminalBoom')}}>
 					<Row>
 						<Col md={12}>
 							<p className="challenge-title">The Beer Bootle Challenge</p>

@@ -22,7 +22,7 @@ class ChallengeCard extends Component{
 				</div>
 				<div className="card-details">
 					<div className="description">
-						<p className="description-title">Description</p>
+						<p className="description-title">Description <small>(by {this.state.by})</small></p>
 						<p>{this.state.description}</p>
 					</div>
 					<div className="location">
