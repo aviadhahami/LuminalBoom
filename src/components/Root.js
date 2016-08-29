@@ -15,7 +15,7 @@ const routeTo = function () {
 const Root = () =>
 	<div>
 		<div className="navbar customNav flex-row">
-			<div className="col-md-4">
+			<div className="col-md-5">
 				<ul className="nav-list">
 					<li>
 						<a href="#" onClick={routeTo.bind({route:'discover'})}>Discover</a>
@@ -28,12 +28,12 @@ const Root = () =>
 					</li>
 				</ul>
 			</div>
-			<div className="col-md-3 center">
+			<div className="col-md-2">
 				<a href="#" className="app-name" onClick={routeTo.bind({route:''})}>
 					LuminalBoom
 				</a>
 			</div>
-			<div className="col-md-4">
+			<div className="col-md-5">
 				<ul className="nav-list float-right">
 					<li>
 						<a href="#"><i className="fa fa-search"></i></a>
