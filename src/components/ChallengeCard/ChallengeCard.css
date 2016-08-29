@@ -1,14 +1,16 @@
 .card-photo img{
-    width:400px;
+    width:100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .card-container{
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 10px;
-    width:400px;
-    margin:0 auto;
+    /*width:400px;*/
+    /*margin:0 auto;*/
     margin-bottom: 5vh;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .card-title{
     background-color: rgba(0,0,0,0.7);
