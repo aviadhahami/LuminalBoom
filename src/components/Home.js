@@ -1,4 +1,7 @@
+import './Home.css'
+
 import React, { Component } from 'react'
+import {Grid, Row, Col} from 'react-bootstrap'
 
 class Home extends Component {
 	constructor () {
@@ -7,7 +10,17 @@ class Home extends Component {
 	
 	render () {
 		return (
-			<h2>Home</h2>
+			<div className="full-width">
+			<Grid>
+				
+					<Row className="show-grid graffiti-bg">
+						<Col md={4}>
+						
+						</Col>
+					</Row>
+				
+			</Grid>
+				</div>
 		)
 	}
 }

@@ -1,17 +1,18 @@
-@value small from "../breakpoints.css";
-
-.section {
-  padding: 1em;
-  text-align: center;
+.black-background{
+    background-color: black;
 }
 
-.h2 {
-  composes: red from "../colors.css";
+.graffiti-bg{
+    width:100%!important;
+    height:700px;
+    background-image:url('http://wallpapercave.com/wp/ZG5VyzK.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
 }
-
-@media small {
-  .block {
-    float: left;
-    width: 50%;
-  }
+.full-width > .container{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0!important;
 }
