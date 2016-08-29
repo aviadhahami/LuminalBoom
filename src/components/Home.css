@@ -48,10 +48,17 @@
 .section-b-container{
     margin:0 auto;
     height:100vh;
-    background-color: #7d5da9;
+    background-color: rgba(255,255,255,0.9);
+    background-image: url('http://cdn.pcwallart.com/images/geometric-shapes-design-wallpaper-3.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section-title{
-
+    font-size: 6em;
+    font-weight: 600;
+    text-align: center;
+    color:rgba(255,255,255,0.95);
+    /*color:rgba(0,0,0,0.95);*/
 }
 .section-title-container{
 

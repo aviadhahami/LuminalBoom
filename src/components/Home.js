@@ -2,7 +2,8 @@ import './Home.css'
 
 import React, { Component } from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
-
+import Challenge from './Challenge/Challenge'
+import ChallengeList from './Challenge-List/Challenge-List'
 
 class Home extends Component {
 	constructor () {
@@ -26,8 +27,14 @@ class Home extends Component {
 						<Col md={12} className="section-b-container">
 							<div className="section-title-container">
 								<p className="section-title">
-									Section B
+									Explore Vibrant Creative Universe
 								</p>
+							</div>
+							<div className="featured-event">
+								<Challenge />
+							</div>
+							<div className="event-list">
+								<ChallengeList />
 							</div>
 						</Col>
 					</Row>
