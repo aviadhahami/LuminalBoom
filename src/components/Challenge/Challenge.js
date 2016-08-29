@@ -67,22 +67,30 @@ class Challenge extends  Component{
 						</Col>
 					</Row>
 					<Row>
-						<Col md={12}>
+						<Col md={6}>
 							<ul className="tags-list">
 								<li>
 									<div className="tag">
-										<i className="fa fa-map-marker"></i>
+										<i className="fa fa-map-marker fa-2x"></i>
 										<p>TLV,IL</p>
 									</div>
 								</li>
 								<li>
 									<div className="tag">
-										<i className="fa fa-tag"></i>
+										<i className="fa fa-tag fa-2x"></i>
 										<p>Family</p>
 									</div>
 								</li>
 							</ul>
-						
+						</Col>
+						<Col md={2}>
+							<ul className="tags-list">
+								<li>
+									<div className="tag  liked">
+										<i className="fa fa-heart fa-2x"></i>
+									</div>
+								</li>
+							</ul>
 						</Col>
 					</Row>
 				</div>
