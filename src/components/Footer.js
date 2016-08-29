@@ -17,14 +17,10 @@ class Footer extends Component{
 		return(
 			<Grid className="footer width-100">
 				<Row className="show-grid width-100 footer-container">
-					<Col md={10}>
-						<div className="lominal-circle-footer">
-							<p className="lominal-text-footer">
-								LominalBoom
-							</p>
-						</div>
+					<Col md={2} className="float-left">
+						<img className="Luminal-logo" src="./assets/LuminalLogo.png" alt=""/>
 					</Col>
-					<Col md={2} className="float-right">
+					<Col md={2} className="float-right zell-logo-container">
 						<img className="zell-logo" src="./assets/ZellLogo.png" alt=""/>
 					</Col>
 				</Row>

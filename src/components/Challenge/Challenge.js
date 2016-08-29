@@ -20,7 +20,7 @@ class Challenge extends  Component{
 	render(){
 		return(
 			<Grid>
-				<div className="challenge-container" onClick={()=>{window.open('https://www.instagram.com/explore/tags/LuminalBoom')}}>
+				<div className="challenge-container">
 					<Row>
 						<Col md={12}>
 							<p className="challenge-title">The Beer Bootle Challenge</p>
@@ -28,7 +28,7 @@ class Challenge extends  Component{
 						</Col>
 					</Row>
 					<Row>
-						<Col md={8}>
+						<Col md={8} onClick={()=>{window.open('https://www.instagram.com/explore/tags/LuminalBoom')}}>
 							<img className="challenge-picture" src="./assets/pictures/PopBeerChallenge.png" alt=""/>
 						</Col>
 						<Col md={4}>

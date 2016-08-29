@@ -3,14 +3,22 @@
     margin:0;
     padding: 0 0 5vh;
     padding-top: 5vh;
-    height:200px;
+    /*height: 300px;*/
     background-color: rgb(172, 35, 86);
 
 }
 .footer-container{
     padding-top:2vh;
 }
+.zell-logo-container{
+    text-align: right;
+}
 .zell-logo{
+    width:150px;
+    transform: translateY(50%);
+    text-align: right;
+}
+.Luminal-logo{
     width:150px;
 }
 .lominal-circle-footer{
