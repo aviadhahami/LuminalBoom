@@ -23,7 +23,7 @@ class ChallangeList extends  Component{
 					location:'TLV, IL',
 					participants:12245,
 					daysToGo:12,
-					percentage:90
+					percentage:12
 				},
 				card_2:{
 					name:'Challenge A',
@@ -41,7 +41,7 @@ class ChallangeList extends  Component{
 					location:'TLV, IL',
 					participants:12245,
 					daysToGo:12,
-					percentage:90
+					percentage:56
 				},
 			}
 		}

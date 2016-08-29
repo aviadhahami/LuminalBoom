@@ -38,3 +38,12 @@ html,body{
     display: flex;
     justify-content:space-around;
 }
+.horizontal-list{
+    display: inline-flex;
+    width:100%;
+    justify-content:space-around;
+}
+.horizontal-list li{
+    margin-left: 2%;
+    margin-right: 2%;
+}

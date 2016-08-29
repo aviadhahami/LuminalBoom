@@ -3,7 +3,7 @@
  */
 import './ChallengeCard.css'
 import React,{Component} from 'react'
-import {Grid, Row, Col, Button} from 'react-bootstrap'
+import {Grid, Row, Col, Button, ProgressBar} from 'react-bootstrap'
 
 class ChallengeCard extends Component{
 	constructor(props){
@@ -33,9 +33,18 @@ class ChallengeCard extends Component{
 						<p><i className="fa fa-map-marker"></i>{this.state.location}</p>
 					</div>
 					<div className="loading">
-					
+						<ProgressBar bsStyle={this.state.percentage > 85 ? 'success' : this.state.percentage < 30 ? 'danger' : 'warning'} now={this.state.percentage} />
 					</div>
-					<div className="flex-row info"></div>
+					<div className="info">
+						<ul className="horizontal-list">
+							<li>
+								<p><b>{this.state.participants}</b> <br/> Participants</p>
+							</li>
+							<li>
+								<p><b>{this.state.daysToGo}</b><br/> Days to go </p>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		)
