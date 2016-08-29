@@ -10,9 +10,8 @@ class Home extends Component {
 	
 	render () {
 		return (
-			<div className="full-width">
+			<div className="full-width full-height">
 				<Grid>
-					
 					<Row className="show-grid graffiti-bg">
 						<Col md={12} className="logo-container">
 							<div className="lominal-circle">
