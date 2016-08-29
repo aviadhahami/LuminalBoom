@@ -6,12 +6,24 @@ import './About.css'
 import React, {Component} from 'react';
 
 import {Nav, NavItem, Grid, Row, Col} from 'react-bootstrap'
+import MemberCard from './MemberCard/MemberCard'
 
 class About extends Component{
 	constructor(props){
 		super(props);
 		this.state={
-			activeKey : 2
+			activeKey : 2,
+			team:{
+				aviya:{
+					name:'Aviya Sela'
+				},
+				raz:{
+					name:'Raz Nussbaum'
+				},
+				roy:{
+					name:'Roy Meirom'
+				}
+			}
 		}
 	}
 	
@@ -26,10 +38,10 @@ class About extends Component{
 				currentView = <About_Hello />;
 				break;
 			case 2:
-				currentView = <About_Team />
+				currentView = <About_Team />;
 				break;
 			case 3:
-				currentView = <About_Venture />
+				currentView = <About_Venture />;
 				break;
 		}
 		return (
@@ -70,13 +82,13 @@ class About_Team extends Component{
 					<Grid>
 						<Row>
 							<Col md={4}>
-								us
+								<MemberCard member={true} />
 							</Col>
 							<Col md={4}>
-								we
+								{/*<MemberCard member={this.state.team.raz}/>*/}
 							</Col>
 							<Col md={4}>
-								you
+								{/*<MemberCard member={this.state.team.roy}/>*/}
 							</Col>
 						</Row>
 					</Grid>
