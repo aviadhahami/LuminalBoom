@@ -23,13 +23,13 @@ class About extends Component{
 		let currentView = <h2>Test</h2>;
 		switch (this.state.activeKey){
 			case 1:
-				currentView = <h2>1</h2>
+				currentView = <About_Hello />;
 				break;
 			case 2:
-				currentView = <h2>2</h2>
+				currentView = <About_Team />
 				break;
 			case 3:
-				currentView = <h2>3</h2>
+				currentView = <About_Venture />
 				break;
 		}
 		return (
@@ -48,4 +48,36 @@ class About extends Component{
 		)
 	}
 }
+
+class About_Venture extends Component{
+	render(){
+		return(
+			<h2>Venture</h2>
+		)
+	}
+}
+class About_Team extends Component{
+	render(){
+		return(
+			<h2>team</h2>
+		)
+	}
+}
+class About_Hello extends Component{
+	render(){
+		return(
+			<Grid>
+				<Row>
+					<div className="hello_bg" />
+				</Row>
+				<Row>
+					<div className="hello_content-bg">
+						<p>Our mission is to connect businesses to user generated content, based on online challenges</p>
+					</div>
+				</Row>
+			</Grid>
+		)
+	}
+}
+
 export default About;
