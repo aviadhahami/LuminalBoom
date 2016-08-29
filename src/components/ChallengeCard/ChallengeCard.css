@@ -1,0 +1,20 @@
+.card-photo img{
+    width:400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-container{
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    width:400px;
+    margin:0 auto;
+    margin-bottom: 5vh;
+}
+.card-title{
+    background-color: rgba(0,0,0,0.7);
+    height:50px;
+    line-height: 2;
+    font-size: 2em;
+    color:rgba(255,255,255,0.9);
+    transform: translateY(-450%);
+}

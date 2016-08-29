@@ -11,16 +11,21 @@
     text-align: center;
     background-color: rgba(255,255,255,0.95);
     border-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
     width:80%;
     /*width:900px;*/
     /*min-width: 400px;*/
     margin:auto;
-    height:600px;
+    /*height:650px;*/
 }
 .challenge-picture{
     /*width:50%;*/
     margin:0 auto;
-    max-width: 650px;
+    width:90%;
+    max-height: 400px;
 }
 .stats-list p{
     margin-bottom: 5px;
@@ -42,7 +47,7 @@
     width:20%;
 }
 .tags-list{
-    margin-left: 5%;
+    margin-left: 10%;
     display: inline-flex;
     float:left;
 }
@@ -59,4 +64,13 @@
 .liked i{
     color:red;
     line-height: 1.8;
+    text-align: right;
+}
+.description-container{
+    /*width:80%;*/
+    /*margin:auto;*/
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-left: 5%;
 }

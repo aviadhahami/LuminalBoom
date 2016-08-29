@@ -67,7 +67,7 @@ class Challenge extends  Component{
 						</Col>
 					</Row>
 					<Row>
-						<Col md={6}>
+						<Col md={7}>
 							<ul className="tags-list">
 								<li>
 									<div className="tag">
@@ -83,14 +83,21 @@ class Challenge extends  Component{
 								</li>
 							</ul>
 						</Col>
-						<Col md={2}>
+						<Col md={1}>
 							<ul className="tags-list">
 								<li>
-									<div className="tag  liked">
+									<div className="tag liked">
 										<i className="fa fa-heart fa-2x"></i>
 									</div>
 								</li>
 							</ul>
+						</Col>
+					</Row>
+					<Row>
+						<Col md={8} className="description-container">
+							<p className="description-title">About the challenge:</p>
+							<p className="description-text">Upload a photo / video in the concept of “familiness” - anything goes! The most creative photo will win 200 ILS.
+							</p>
 						</Col>
 					</Row>
 				</div>
