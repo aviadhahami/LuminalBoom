@@ -58,14 +58,31 @@ class Challenge extends  Component{
 									</p>
 								</li>
 								<li className="button-container">
-									<Button bsStyle="success" className="button-text" onClick={this.routeTo.bind({route:'active-challenge'})}>Participate in challenge</Button>
+									<Button bsStyle="success" className="button-text"
+											onClick={this.routeTo.bind({route:'mandalimos'})}>
+										Participate Now
+									</Button>
 								</li>
 							</ul>
 						</Col>
 					</Row>
 					<Row>
 						<Col md={12}>
-							tags here
+							<ul className="tags-list">
+								<li>
+									<div className="tag">
+										<i className="fa fa-map-marker"></i>
+										<p>TLV,IL</p>
+									</div>
+								</li>
+								<li>
+									<div className="tag">
+										<i className="fa fa-tag"></i>
+										<p>Family</p>
+									</div>
+								</li>
+							</ul>
+						
 						</Col>
 					</Row>
 				</div>
