@@ -1,13 +1,26 @@
 .footer{
     width:100%;
     margin:0;
-    padding: 0;
+    padding: 0 0 5vh;
+    padding-top: 5vh;
     height:200px;
-}
-.footer>.container{
-    margin:0!important;
-    padding:0!important;
+    background-color: rgb(172, 35, 86);
+
 }
 .footer-container{
-    background-color: rgba(162,210,158,1);
+    padding-top:2vh;
+}
+.zell-logo{
+    width:150px;
+}
+.lominal-circle-footer{
+    background-color: black;
+    width:100px;
+    height:100px;
+    border-radius: 500px;
+    text-align: center;
+    line-height: 7;
+}
+.lominal-text-footer{
+    color:white;
 }

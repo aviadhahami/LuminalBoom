@@ -16,9 +16,16 @@ class Footer extends Component{
 	render(){
 		return(
 			<Grid className="footer width-100">
-				<Row className="show-grid width-100">
-					<Col md={12} className="footer-container width-100">
-						footer
+				<Row className="show-grid width-100 footer-container">
+					<Col md={10}>
+						<div className="lominal-circle-footer">
+							<p className="lominal-text-footer">
+								LominalBoom
+							</p>
+						</div>
+					</Col>
+					<Col md={2} className="float-right">
+						<img className="zell-logo" src="./assets/ZellLogo.png" alt=""/>
 					</Col>
 				</Row>
 			</Grid>
