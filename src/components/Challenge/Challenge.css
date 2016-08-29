@@ -5,6 +5,9 @@
     font-size: 3em;
     font-weight: 600;
 }
+.statistics{
+    font-size: 2em;
+}
 .challenge-container{
     color:rgba(0,0,0,0.9);
     cursor: pointer;

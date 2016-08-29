@@ -34,7 +34,7 @@ class Challenge extends  Component{
 						<Col md={4}>
 							<ul className="stats-list">
 								<li>
-									<p className="bold">
+									<p className="bold statistics">
 										7,096
 									</p>
 									<p>
@@ -42,7 +42,7 @@ class Challenge extends  Component{
 									</p>
 								</li>
 								<li>
-									<p className="bold">
+									<p className="bold statistics">
 										988
 									</p>
 									<p>
@@ -50,7 +50,7 @@ class Challenge extends  Component{
 									</p>
 								</li>
 								<li>
-									<p className="bold">
+									<p className="bold statistics">
 										19
 									</p>
 									<p>
