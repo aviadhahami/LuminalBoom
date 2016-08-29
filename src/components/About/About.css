@@ -27,7 +27,15 @@
     line-height:2.5;
     height:80px;
 }
+.team_members-container{
+    width:100%!important;
+    /*height:100%;*/
+    margin:0;
+    padding-top:0;
+    height: 40vh;
+    background-color: rgba(69, 115, 255, 0.95);
 
+}
 /*Hello Section*/
 .hello_bg{
     width:100%!important;

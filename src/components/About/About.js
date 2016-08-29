@@ -5,7 +5,7 @@
 import './About.css'
 import React, {Component} from 'react';
 
-import {Nav, NavItem, Grid, Row} from 'react-bootstrap'
+import {Nav, NavItem, Grid, Row, Col} from 'react-bootstrap'
 
 class About extends Component{
 	constructor(props){
@@ -52,23 +52,36 @@ class About extends Component{
 class About_Venture extends Component{
 	render(){
 		return(
-			<h2>Venture</h2>
+			<h2>Under construction...</h2>
 		)
 	}
 }
 class About_Team extends Component{
 	render(){
 		return(
-			<Grid>
-				<Row>
-					<div className="team_bg">
-						<p className="team_title">Meet the team</p>
-						<div className="team_title-frame">
-							<p>We are Zell Entrepreneurship Program 2016 SIPers, hopefully 2016 students</p>
-						</div>
+			<div>
+				<div className="team_bg">
+					<p className="team_title">Meet the team</p>
+					<div className="team_title-frame">
+						<p>We are Zell Entrepreneurship Program 2016 SIPers, hopefully 2016 students</p>
 					</div>
-				</Row>
-			</Grid>
+				</div>
+				<div className="team_members-container">
+					<Grid>
+						<Row>
+							<Col md={4}>
+								us
+							</Col>
+							<Col md={4}>
+								we
+							</Col>
+							<Col md={4}>
+								you
+							</Col>
+						</Row>
+					</Grid>
+				</div>
+			</div>
 		)
 	}
 }
