@@ -1,3 +1,34 @@
+.team_bg{
+    width:100%!important;
+    /*height:100%;*/
+    margin:0;
+    padding-top:0;
+    height: 40vh;
+    background-color: rgba(140, 255, 251, 0.66);
+}
+.team_title{
+    line-height: 5;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bolder;
+    color: rgba(69, 115, 255, 0.95)
+}
+.team_title-frame{
+    width:50%;
+    border-radius: 20px;
+    line-height: 1;
+    margin: -5% auto 0;
+    background-color: rgba(53, 126, 221, 0.42);
+}
+.team_title-frame p{
+    color:rgba(0,0,0,0.85);
+    font-size: 2em;
+    margin-left:20px;
+    line-height:2.5;
+    height:80px;
+}
+
+/*Hello Section*/
 .hello_bg{
     width:100%!important;
     /*height:100%;*/

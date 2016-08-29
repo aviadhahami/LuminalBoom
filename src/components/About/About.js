@@ -11,7 +11,7 @@ class About extends Component{
 	constructor(props){
 		super(props);
 		this.state={
-			activeKey : 1
+			activeKey : 2
 		}
 	}
 	
@@ -59,7 +59,16 @@ class About_Venture extends Component{
 class About_Team extends Component{
 	render(){
 		return(
-			<h2>team</h2>
+			<Grid>
+				<Row>
+					<div className="team_bg">
+						<p className="team_title">Meet the team</p>
+						<div className="team_title-frame">
+							<p>We are Zell Entrepreneurship Program 2016 SIPers, hopefully 2016 students</p>
+						</div>
+					</div>
+				</Row>
+			</Grid>
 		)
 	}
 }
