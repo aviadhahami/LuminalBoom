@@ -4,6 +4,7 @@ import React from 'react'
 import { Router, browserHistory, hashHistory } from 'react-router'
 import routes from '../routes'
 import FontAwesome from 'react-fontawesome';
+import Footer from './Footer'
 
 const history = window.location.hostname === 'vesparny.github.io'
 	? hashHistory // for GitHub pages
@@ -47,10 +48,15 @@ const Root = () =>
 				</ul>
 			</div>
 		</div>
-		<Router
-			children={routes}
-			history={history}
-		/>
+		<div>
+			<Router
+				children={routes}
+				history={history}
+			/>
+		</div>
+		<div>
+			<Footer />
+		</div>
 	</div>
 
 

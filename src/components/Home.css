@@ -21,7 +21,7 @@
     height: 100%;
 }
 .full-height{
-    height:92.5vh;
+    height:93vh;
 }
 .lominal-circle{
     margin:0 auto;
@@ -47,6 +47,14 @@
     font-weight: 300;
     font-size: 3em;
 }
-p{
-    color: white;;
+.section-b-container{
+    margin:0 auto;
+    height:100vh;
+    background-color: #7d5da9;
+}
+.section-title{
+
+}
+.section-title-container{
+
 }
