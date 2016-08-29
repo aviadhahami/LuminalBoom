@@ -1,0 +1,31 @@
+.member-container{
+    width:100%;
+    margin:0 auto;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.member-picture{
+
+}
+.member-picture img{
+    width:210px;
+    height:210px;
+    border-radius: 500px;
+    border:6px solid black;
+}
+.member-info{
+    border:6px solid black;
+    width:300px;
+    /*min-height: 350px;*/
+    /*max-height:400px;*/
+    height:400px;
+    margin:0 auto;
+    margin-top: 30px;
+    text-align: justify;
+    background-color: rgba(140, 255, 251, 0.66);
+}
+.member-info p{
+    padding: 10px;
+    color: #000;
+}

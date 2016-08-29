@@ -15,13 +15,22 @@ class About extends Component{
 			activeKey : 2,
 			team:{
 				aviya:{
-					name:'Aviya Sela'
+					name:'Aviya Sela',
+					picture:'assets/team/AviyaPhoto.jpg',
+					about:'completed her degree in Computer Science with a minor in Psychology at the Efi Arazi School of Computer Science at IDC Herzliya. In the IDF, Aviya served in the elite intelligence unit 8200. Before that, she spent a year in the Auckland International College in New Zealand as part of the International Baccalaureate Program. During her studies, Aviya participated in the Media Innovation Lab (miLAB) Human-Computer Interaction Program and was part of IDC Debate Club, alongside tutoring in Pisgah to promote the agenda of technology and cyber education to children from all groups of society. Aviya is a director of HackIDC 2015 and 2016 - Israel’s leading annual student Hackathon.'
 				},
 				raz:{
-					name:'Raz Nussbaum'
+					name:'Raz Nussbaum',
+					picture:'assets/team/RazPhoto.png',
+					about:'is a third year Psychology student at the Baruch Ivcher School of Psychology at IDC Herzliya. Raz was a research assistant at the Decision Making Research Center (DICE lab) and he is on the dean’s list. In the IDF, Raz served as a combat officer in the Artillery Corps special unit “Rochev Shamayim” that operates drones for the ground forces. He worked at the IAI Company as a drone operating consultant and project manager assistant in Multi-rotor drones developing projects. He participated in the IEC\'s Startup class, IDC investment club and volunteered at “Perach Tutorial Project” as a personal tutor. He was a professional basketball player as a teenager and loves scuba diving.'
+					
 				},
 				roy:{
-					name:'Roy Meirom'
+					name:'Roy Meirom',
+					picture:'assets/team/RoyPhoto.png',
+					about:'is a fourth year student in the joint degree program for Law and Business Administration at the Radzyner School of Law and the Arison School of Business (with a merit scholarship). Roy grew up both in Israel and abroad, and has served as a commander in the IDF’s Combat Reconnaissance Force. Throughout his studies, he founded “ISCA” - an academic advocacy program; he took part in various social-tech ventures and was a coordinator for both IDC’s “Legal Clinic for Start-Ups” and the “Executive Education" unit. Roy was a yearlong counselor at the “Raphael Recanati International School” and is a research assistant at the “Zvi Meitar Institute for Emerging Technologies”. He is an avid swimmer and outdoor enthusiast.'
+					
+					
 				}
 			}
 		}
@@ -38,7 +47,7 @@ class About extends Component{
 				currentView = <About_Hello />;
 				break;
 			case 2:
-				currentView = <About_Team />;
+				currentView = <About_Team members={this.state.team}/>;
 				break;
 			case 3:
 				currentView = <About_Venture />;
@@ -82,13 +91,13 @@ class About_Team extends Component{
 					<Grid>
 						<Row>
 							<Col md={4}>
-								<MemberCard member={true} />
+								<MemberCard member={this.props.members.aviya}/>
 							</Col>
 							<Col md={4}>
-								{/*<MemberCard member={this.state.team.raz}/>*/}
+								<MemberCard member={this.props.members.raz}/>
 							</Col>
 							<Col md={4}>
-								{/*<MemberCard member={this.state.team.roy}/>*/}
+								<MemberCard member={this.props.members.roy}/>
 							</Col>
 						</Row>
 					</Grid>
