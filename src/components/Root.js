@@ -18,7 +18,6 @@ const routeTo = function () {
 const Root = () =>
 	<Grid>
 		<Row>
-			
 			<div className="navbar customNav">
 				<div className="col-md-5">
 					<ul className="nav-list">

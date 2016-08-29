@@ -19,6 +19,7 @@
     display: inline-flex;
 }
 .nav-list li a{
+    font-weight: bolder;
     transition: all 0.2s linear;
 }
 .nav-list li a:hover{
@@ -39,7 +40,7 @@
     float:right;
 }
 .app-name{
-    font-weight: 600;
+    font-weight: 100;
     font-size: 2em;
     line-height: 1.5;
 }

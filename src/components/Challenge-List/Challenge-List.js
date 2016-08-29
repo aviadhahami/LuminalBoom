@@ -17,13 +17,15 @@ class ChallangeList extends  Component{
 		this.state={
 			cards : {
 				card_1:{
-					name:'Challenge A',
-					picture:'https://lh4.googleusercontent.com/-blXNrBLIAYs/AAAAAAAAAAI/AAAAAAAAACk/_blBP6GDiok/s0-c-k-no-ns/photo.jpg',
-					active:false,
+					name:'MendalimosBar',
+					picture:'assets/pictures/MendalimosBarPhoto.png',
+					active:true,
 					location:'TLV, IL',
-					participants:12245,
+					participants:25,
 					daysToGo:12,
-					percentage:12
+					percentage:87,
+					linkTo:'https://www.instagram.com/explore/tags/mendalimosfamily/',
+					description:'Upload a photo / video in the concept of “familiness” - anything goes! The most creative photo will win 200 ILS.'
 				},
 				card_2:{
 					name:'Challenge A',
@@ -32,7 +34,9 @@ class ChallangeList extends  Component{
 					location:'TLV, IL',
 					participants:12245,
 					daysToGo:12,
-					percentage:90
+					percentage:20,
+					description:'This event is not active at the moment'
+									
 				},
 				card_3:{
 					name:'Challenge A',
@@ -41,7 +45,8 @@ class ChallangeList extends  Component{
 					location:'TLV, IL',
 					participants:12245,
 					daysToGo:12,
-					percentage:56
+					percentage:56,
+					description:'This event is not active at the moment. Check again soon!'
 				},
 			}
 		}

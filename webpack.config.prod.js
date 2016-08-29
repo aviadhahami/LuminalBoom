@@ -3,6 +3,8 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var StatsPlugin = require('stats-webpack-plugin')
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackShellPlugin = require('webpack-shell-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -33,7 +35,14 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
+    }),
+	  new CopyWebpackPlugin([
+		  {from:'font-awesome', to:'font-awesome'},
+		  {from:'assets', to:'assets'},
+	  ]),
+	  new WebpackShellPlugin({
+	  	onBuildEnd:['firebase deploy']
+	  })
   ],
   module: {
     loaders: [{
