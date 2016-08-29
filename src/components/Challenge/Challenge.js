@@ -20,16 +20,16 @@ class Challenge extends  Component{
 	render(){
 		return(
 			<Grid>
-				<div className="challenge-container">
+				<div className="challenge-container" onClick={()=>{window.open('https://www.instagram.com/explore/tags/LominalBoom')}}>
 					<Row>
 						<Col md={12}>
-							<p className="challenge-title">No Place Like Home</p>
-							<p className="challenge-subtitle">By Mandalimos</p>
+							<p className="challenge-title">The Beer Bootle Challenge</p>
+							<p className="challenge-subtitle">By LominalBoom</p>
 						</Col>
 					</Row>
 					<Row>
 						<Col md={8}>
-							<img className="challenge-picture" src="./assets/pictures/MendalimosBarPhoto.png" alt=""/>
+							<img className="challenge-picture" src="./assets/pictures/PopBeerChallenge.png" alt=""/>
 						</Col>
 						<Col md={4}>
 							<ul className="stats-list">
@@ -58,8 +58,8 @@ class Challenge extends  Component{
 									</p>
 								</li>
 								<li className="button-container">
-									<Button bsStyle="success" className="button-text"
-											onClick={this.routeTo.bind({route:'mandalimos'})}>
+									<Button bsStyle="success" className="button-text">
+											{/*onClick={this.routeTo.bind({route:'mandalimos'})}>*/}
 										Participate Now
 									</Button>
 								</li>
@@ -94,9 +94,10 @@ class Challenge extends  Component{
 						</Col>
 					</Row>
 					<Row>
-						<Col md={8} className="description-container">
-							<p className="description-title">About the challenge:</p>
-							<p className="description-text">Upload a photo / video in the concept of “familiness” - anything goes! The most creative photo will win 200 ILS.
+						<Col md={7} className="description-container">
+							<p className="description-title">The Challenge:</p>
+							<p className="description-text">
+								Upload a photo that includes <i>#LominalBoom</i> and a bottle of beer - get wacky! The winning photo will get lifetime glory in Zell 16’.
 							</p>
 						</Col>
 					</Row>

@@ -1,5 +1,5 @@
 {
-  "firebase": "LuminalBoom",
+  "firebase": "luminalboom",
   "public": "dist",
   "ignore": [
     "firebase.json",

@@ -13,7 +13,7 @@ class ChallengeCard extends Component{
 	
 	render(){
 		return(
-			<div className={this.state.active?'card-container active':'card-container not-active'} onClick={()=>{window.open(this.state.linkTo);}}>
+			<div className={this.state.active?'card-container active':'card-container not-active'} onClick={()=>{if (this.state.linkTo) window.open(this.state.linkTo);}}>
 				<div className="card-photo">
 					<img src={this.state.picture} alt=""/>
 					<p className="card-title">
