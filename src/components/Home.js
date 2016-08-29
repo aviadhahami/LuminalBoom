@@ -11,16 +11,20 @@ class Home extends Component {
 	render () {
 		return (
 			<div className="full-width">
-			<Grid>
-				
+				<Grid>
+					
 					<Row className="show-grid graffiti-bg">
-						<Col md={4}>
-						
+						<Col md={12} className="logo-container">
+							<div className="lominal-circle">
+								<p className="lominal-text">
+									LominalBoom
+								</p>
+							</div>
 						</Col>
 					</Row>
 				
-			</Grid>
-				</div>
+				</Grid>
+			</div>
 		)
 	}
 }
