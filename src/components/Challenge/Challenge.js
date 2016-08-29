@@ -4,11 +4,17 @@
 
 import './Challenge.css'
 import React,{Component} from 'react'
-import {Grid, Row, Col} from 'react-bootstrap'
+import {browserHistory} from 'react-router'
+import {Grid, Row, Col, Button} from 'react-bootstrap'
+
+const history = browserHistory;
 
 class Challenge extends  Component{
 	constructor(props){
 		super(props);
+	}
+	routeTo() {
+		history.push(`/${this.route}`);
 	}
 	
 	render(){
@@ -51,7 +57,15 @@ class Challenge extends  Component{
 										participated
 									</p>
 								</li>
+								<li className="button-container">
+									<Button bsStyle="success" className="button-text" onClick={this.routeTo.bind({route:'active-challenge'})}>Participate in challenge</Button>
+								</li>
 							</ul>
+						</Col>
+					</Row>
+					<Row>
+						<Col md={12}>
+							tags here
 						</Col>
 					</Row>
 				</div>

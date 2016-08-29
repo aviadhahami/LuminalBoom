@@ -10,7 +10,7 @@ import {Grid, Row} from 'react-bootstrap'
 
 const history = window.location.hostname === 'vesparny.github.io'
 	? hashHistory // for GitHub pages
-	: browserHistory
+	: browserHistory;
 
 const routeTo = function () {
 	history.push(`/${this.route}`);

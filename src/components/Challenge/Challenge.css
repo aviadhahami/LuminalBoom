@@ -27,8 +27,14 @@
 }
 .stats-list{
     text-align: justify;
-    font-size: 3em;
+    font-size: 2.2em;
 }
 .bold{
     font-weight: 600;
+}
+.button-text{
+    font-size: 1em;
+}
+.button-container{
+    margin-top: 30px;
 }
